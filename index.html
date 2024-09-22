@@ -24,7 +24,7 @@
                 <!-- blance -->
                 <div class="flex items-center">
                     <img class="w-[3vw] mx-1 " src="assets/coin.png" alt="" srcset="">
-                    <p class="text-[3vw] font-semibold">10000</p><p class="text-[2vw] font-thin"> BDT</p>
+                    <p id="main-blance-js" class="text-[3vw] font-semibold">10000</p><p class="text-[2vw] font-thin"> BDT</p>
                 </div>
             </div>
         </div>
@@ -32,15 +32,18 @@
         <div class=" flex justify-center w- 21.5% bg-white ">
             <!-- donate button -->
             <div>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461] text-[16px] text-white m-2">Donate</button>
+                <button id="donate-js" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1111114D] text-[16px] text-white m-2">Donate</button>
             </div>
             <!-- history button -->
             <div>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[16px] text-white m-2">History</button>
+                <button id="history-js" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1111114D] text-[16px] text-white m-2">History</button>
             </div>
         </div>
     </header>
     <main>
+        <!-- history section -->
+        <div id="history" class="flex flex-col justify-center items-center ">
+          </div>
         <!-- Donation event section -->
          <section>
 
@@ -56,19 +59,19 @@
                         <!-- money -->
                         <div class=" flex items-center bg-[#1111110D] border rounded-lg sm:w-[18vw] lg:w-[12vw] mb-5 p-2">
                             <img class="px-1" src="assets/coin.png" alt="" srcset="">
-                            <p class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
+                            <p id="noakhali-donate-blance-js" class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
                         </div>
                         <!-- heading -->
-                         <h3 class="text-[20px] text-black font-semibold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
+                         <h3 id="noakhali" class="text-[20px] text-black font-semibold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
                          <!-- content -->
                          <p class="text-[16px] mb-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                          <!-- input -->
                          <div class="my-5">
-                            <input type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
+                            <input id="noakhali-amount-js" type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
                         </div>
                          <!-- button -->
                          <div>
-                            <button class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Blog</button>
+                            <button id="noakhali-donate-js" class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Donate Now</button>
                         </div>
     
                     </div>
@@ -79,7 +82,7 @@
             <div class="w-[80vw] m-auto my-4 border rounded-lg lg:flex">
                 <!-- Noakhli left -->
                  <div class="p-[2.2vw] lg:w-[50vw] flex justify-center">
-                    <img class="lg:w-[100%]" src="assets/noakhali.png" alt="" srcset="">
+                    <img class="lg:w-[100%]" src="assets/feni.png" alt="" srcset="">
                  </div>
                  <!-- Noakhaali right -->
                  <div class="p-[2.2vw] justify-center m-auto w-[90%] lg:w-[50vw]">
@@ -87,19 +90,19 @@
                         <!-- money -->
                         <div class=" flex items-center bg-[#1111110D] border rounded-lg sm:w-[18vw] lg:w-[12vw] mb-5 p-2">
                             <img class="px-1" src="assets/coin.png" alt="" srcset="">
-                            <p class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
+                            <p id="feni-donate-blance-js" class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
                         </div>
                         <!-- heading -->
-                         <h3 class="text-[20px] text-black font-semibold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
+                         <h3 id="feni" class="text-[20px] text-black font-semibold mb-4">Donate for Flood Relief in Feni,Bangladesh</h3>
                          <!-- content -->
-                         <p class="text-[16px] mb-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                         <p class="text-[16px] mb-2">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                          <!-- input -->
                          <div class="my-5">
-                            <input type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
+                            <input id="feni-amount-js" type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
                         </div>
                          <!-- button -->
                          <div>
-                            <button class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Blog</button>
+                            <button id="feni-donate-js" class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Blog</button>
                         </div>
     
                     </div>
@@ -118,19 +121,19 @@
                         <!-- money -->
                         <div class=" flex items-center bg-[#1111110D] border rounded-lg sm:w-[18vw] lg:w-[12vw] mb-5 p-2">
                             <img class="px-1" src="assets/coin.png" alt="" srcset="">
-                            <p class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
+                            <p id="aid-donate-blance-js" class="text-[16px]">0</p><p class="text-[16px]">BDT</p>
                         </div>
                         <!-- heading -->
-                         <h3 class="text-[20px] text-black font-semibold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
+                         <h3 id="aid" class="text-[20px] text-black font-semibold mb-4">Aid for Injured in the Quota Movement</h3>
                          <!-- content -->
-                         <p class="text-[16px] mb-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                         <p class="text-[16px] mb-2"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                          <!-- input -->
                          <div class="my-5">
-                            <input type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
+                            <input id="aid-amount-js" type="number" placeholder="amount" class="input input-bordered bg-transparent w-[100%]" required />
                         </div>
                          <!-- button -->
                          <div>
-                            <button class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Blog</button>
+                            <button id="aid-donate-js" class="btn w-[100%] bg-[#B4F461] text-[16px] text-white">Blog</button>
                         </div>
     
                     </div>
@@ -140,6 +143,21 @@
             
         
          </section>
+
+         
     </main>
+    <script src="js/utility.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('donate-js').addEventListener('click',function(event){
+            document.getElementById('donate-js').style.backgroundColor = "#B4F461"
+            document.getElementById('history-js').style.backgroundColor = "#1111114D"
+        })
+        document.getElementById('history-js').addEventListener('click',function(event){
+            document.getElementById('history-js').style.backgroundColor = "#B4F461"
+            document.getElementById('donate-js').style.backgroundColor = "#1111114D"
+        })
+    </script>
+    
 </body>
 </html>
