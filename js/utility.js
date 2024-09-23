@@ -1,11 +1,13 @@
 //  blance update function
-function BlanceUpdate(mainblance , amount , donate , reason){
+function BlanceUpdate(mainblance , amount , donate , reason, pop){
     // condition for positive number
     if( ((document.getElementById(amount).value))> 0){
         // main blance update
         document.getElementById(mainblance).innerHTML = parseFloat(document.getElementById(mainblance).innerHTML) - parseFloat(document.getElementById(amount).value);
         // donate blance update
         document.getElementById(donate).innerHTML = parseFloat(document.getElementById(donate).innerHTML) + parseFloat(document.getElementById(amount).value);
+        // pop show
+        document.getElementById(pop).style.display ="flex";  
         // create div, h3, p element
         const div = document.createElement('div');
         const h3  = document.createElement('h3');
@@ -30,4 +32,13 @@ function BlanceUpdate(mainblance , amount , donate , reason){
         document.getElementById('history').insertBefore(div,document.getElementById('history').firstChild);
     }
     
+}
+
+function ButtonEvent(button , buttonEvent){
+    document.getElementById('donate-js').style.backgroundColor = "#1111114D";
+    document.getElementById('history-js').style.backgroundColor = "#1111114D";
+    document.getElementById('history').style.display ="none";
+    document.getElementById('donation').style.display =" none";
+    document.getElementById(button).style.backgroundColor = "#B4F461"
+    document.getElementById(buttonEvent).style.display =" flex";
 }
