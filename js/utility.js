@@ -1,11 +1,13 @@
 //  blance update function
 function BlanceUpdate(mainblance , amount , donate , reason, pop){
     // condition for positive number
-    if( ((document.getElementById(amount).value))> 0){
+    if( ((parseFloat(document.getElementById(amount).value)) > 0) && ((parseFloat(document.getElementById(amount).value)) <= (parseFloat(document.getElementById(mainblance).innerHTML))) ){
         // main blance update
-        document.getElementById(mainblance).innerHTML = parseFloat(document.getElementById(mainblance).innerHTML) - parseFloat(document.getElementById(amount).value);
+        const mainBlance = parseFloat(document.getElementById(mainblance).innerHTML) - parseFloat(document.getElementById(amount).value);
+        document.getElementById(mainblance).innerHTML =parseFloat(mainBlance).toFixed(2);
         // donate blance update
-        document.getElementById(donate).innerHTML = parseFloat(document.getElementById(donate).innerHTML) + parseFloat(document.getElementById(amount).value);
+        const donateBlance = parseFloat(document.getElementById(donate).innerHTML) + parseFloat(document.getElementById(amount).value);
+        document.getElementById(donate).innerHTML = parseFloat(donateBlance).toFixed(2);
         // pop show
         document.getElementById(pop).style.display ="flex";  
         // create div, h3, p element
@@ -13,7 +15,7 @@ function BlanceUpdate(mainblance , amount , donate , reason, pop){
         const h3  = document.createElement('h3');
         const p  = document.createElement('p');
         // add inner text
-        h3.innerText = parseFloat(document.getElementById(amount).value) + " Taka is " + document.getElementById(reason).innerHTML;
+        h3.innerText = parseFloat(document.getElementById(amount).value).toFixed(2) + " Taka is " + document.getElementById(reason).innerHTML;
         p.innerText ="Time: " + new Date() ;
         // add them ass sub element in div
         div.appendChild(h3);
@@ -31,9 +33,19 @@ function BlanceUpdate(mainblance , amount , donate , reason, pop){
         // add div to html id
         document.getElementById('history').insertBefore(div,document.getElementById('history').firstChild);
     }
+    else if(((parseFloat(document.getElementById(amount).value)) > (parseFloat(document.getElementById(mainblance).innerHTML)))){
+        alert("You don't have enough money");
+    }
+    else if( parseFloat(document.getElementById(amount).value) <= 0 ){
+        alert("Please add valid amount");
+
+    }
+    else{
+        alert("Empty Amount");
+    }
     
 }
-
+// button and pop function
 function ButtonEvent(button , buttonEvent){
     document.getElementById('donate-js').style.backgroundColor = "#1111114D";
     document.getElementById('history-js').style.backgroundColor = "#1111114D";
