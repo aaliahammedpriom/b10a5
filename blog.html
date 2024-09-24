@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white h-[100%]">
-    <header >
+    <header class="sticky top-0" >
         <!-- heaader button section -->
         <div class=" bg-[#F9F7F3] h-[8vw] flex items-center">
             <div class="flex justify-between w-[80vw] m-auto">
@@ -29,7 +29,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="">
         <section>
             <!-- faq -->
             <div>
@@ -37,7 +37,7 @@
             </div>
         </section>
         <!-- question section -->
-        <section class="pb-20">
+        <section class="pb-20 max-h-[calc(100vh-5vh)] overflow-y-auto">
             
             <!-- q1 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
@@ -47,18 +47,20 @@
                   <p>Web documents include a programming interface called the Document Object Model (DOM). It depicts a webpage's structure as a tree of objects, with each element, attribute, and text segment acting as a node. The DOM is a tool used by developers to dynamically access, alter, and work with online information.</p>
                 </div>
             </div>
+            
             <!-- q2 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-sm font-medium text-black">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                  <p>
-                    There are several methods depending on our need:<br><br>
-                    document.getElementById('elementId');<br>
-                    document.getElementsByClassName('className');<br>
-                    document.getElementsByTagName('div');<br>
-                    document.querySelectorAll('div.className');
-                </p>
+                    <p>
+
+                        There are several methods depending on our need:<br><br>
+                        document.getElementById('elementId');<br>
+                        document.getElementsByClassName('className');<br>
+                        document.getElementsByTagName('div');<br>
+                        document.querySelectorAll('div.className');
+                    </p>
                 </div>
             </div>
             <!-- q3 -->
