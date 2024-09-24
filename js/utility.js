@@ -41,7 +41,7 @@ function BlanceUpdate(mainblance , amount , donate , reason, pop){
 
     }
     else{
-        alert("Empty Amount");
+        alert("Invalid Amount");
     }
     
 }
