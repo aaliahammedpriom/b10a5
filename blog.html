@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
+<body class="bg-white h-[100vh]">
     <header class="sticky top-0 ">
         <!-- heaader button section -->
         <div class=" bg-[#F9F7F3] h-[8vw] flex items-center">
@@ -32,9 +32,11 @@
     <main>
         <!-- question section -->
         <section class="pb-20">
+            <!-- faq -->
             <div>
                 <h1 class=" w-[80vw]  m-auto my-2 p-4 text-3xl text-black"> Important FAQ </h1>
             </div>
+            <!-- q1 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-sm font-medium text-black">What is the Document Object Model (DOM)?</div>
@@ -42,27 +44,60 @@
                   <p>Web documents include a programming interface called the Document Object Model (DOM). It depicts a webpage's structure as a tree of objects, with each element, attribute, and text segment acting as a node. The DOM is a tool used by developers to dynamically access, alter, and work with online information.</p>
                 </div>
             </div>
+            <!-- q2 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-sm font-medium text-black">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-sm font-medium text-black">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                  <p>Web documents include a programming interface called the Document Object Model (DOM). It depicts a webpage's structure as a tree of objects, with each element, attribute, and text segment acting as a node. The DOM is a tool used by developers to dynamically access, alter, and work with online information.</p>
+                  <p>
+                    There are several methods depending on our need:<br><br>
+                    document.getElementById('elementId');<br>
+                    document.getElementsByClassName('className');<br>
+                    document.getElementsByTagName('div');<br>
+                    document.querySelectorAll('div.className');
+                </p>
                 </div>
             </div>
+            <!-- q3 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-sm font-medium text-black">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-sm font-medium text-black">What is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
-                  <p>Web documents include a programming interface called the Document Object Model (DOM). It depicts a webpage's structure as a tree of objects, with each element, attribute, and text segment acting as a node. The DOM is a tool used by developers to dynamically access, alter, and work with online information.</p>
+                  <p>
+                    In the DOM, event delegation is a technique where a parent element's single event listener is attached to handle events that are triggered by its child elements. Instead of adding multiple listeners to individual child elements, the parent listens for events that bubble up from its children.<br><br>
+
+                    Why It is Beneficial: <br>
+                    Efficiency: When there are numerous child elements, having a single listener instead of multiple ones uses less memory. <br>
+                    Managing dynamic content: Gathers events for newly added DOM elements automatically.<br>
+                    Code simpler: centralised event handling minimises complexity.
+                  </p>
                 </div>
             </div>
+            <!-- q4 -->
             <div class="collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-sm font-medium text-black">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-sm font-medium text-black">
+                    How do you manipulate an element's attributes and styles using the DOM?
+                </div>
                 <div class="collapse-content">
-                  <p>Web documents include a programming interface called the Document Object Model (DOM). It depicts a webpage's structure as a tree of objects, with each element, attribute, and text segment acting as a node. The DOM is a tool used by developers to dynamically access, alter, and work with online information.</p>
+                    <p>
+                        Attributes <br>
+                        getAttribute(attr): Gets the value of an attribute.<br>
+                        setAttribute(attr, value): Sets/updates an attribute.<br>
+                        removeAttribute(attr): Removes an attribute.<br><br>
+                        Styles<br>
+                        element.style.property: Sets a CSS property.<br>
+                        element.style.cssText: Sets multiple CSS properties.<br>
+                        getComputedStyle(el): gets all computed styles.<br><br>
+                        Classes<br>
+                        classList.add(class): Adds a class.<br>
+                        classList.remove(class): Removes a class.<br>
+                        classList.toggle(class): Toggles a class.<br>
+                        classList.contains(class): Checks for a class.<br>
+                    </p>
                 </div>
             </div>
+            <!-- q5 hide -->
             <div class=" hidden collapse collapse-arrow bg-white w-[80vw]  m-auto my-2 border  p-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium text-black"></div>
